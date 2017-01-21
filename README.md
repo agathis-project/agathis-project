@@ -1,5 +1,3 @@
-# agathis-project
+Agathis Project
 
-Summary of the Agathis Project
-
-Project List, AP numbers
+Project List, Guidelines and Templates
