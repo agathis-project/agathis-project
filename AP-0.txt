@@ -1,0 +1,83 @@
+AP: 0
+Repo Name: agathis-project
+Title: Agathis Proposals Index
+Status: Active
+Type: Informational
+Version: $Revision$
+Last Modified: $2017-01-21$
+Author: md-agathisproject@gmail.com
+License: CC BY-SA
+Content-Type: text/x-rst
+
+=======================
+Agathis Proposals Index
+=======================
+
+1. Abstract
+===========
+
+AP-0 is the index of all Agathis Proposals.
+
+The AP numbers and repo names are assigned by one of the Agathis Project 
+admins.
+
+This doc is updated when an Agathis Proposal is created or changes its status.
+
+
+2. Index by Type
+================
+
+2.1. Process
+------------
+
+=== ==================== ================================= ====== =============
+AP# Repo Name            Title                             State  License
+=== ==================== ================================= ====== =============
+
+=== ==================== ================================= ====== =============
+
+2.2. Informational
+------------------
+
+=== ==================== ================================= ====== =============
+AP# Repo Name            Title                             State  License
+=== ==================== ================================= ====== =============
+0   agathis-project      Agathis Proposals Index           draft  CC-BY-SA
+=== ==================== ================================= ====== =============
+
+2.3. Development
+----------------
+
+=== ==================== ================================= ====== =============
+AP# Repo Name            Title                             State  License
+=== ==================== ================================= ====== =============
+1   salix-arctica        Root Module HW                    active TAPR
+2   salix-bakko          Root Extension Test Card HW       active TAPR
+3   fagus-crenata        Power Module HW                   active TAPR
+4   salix-breweri        Root Module Microcontroller FW    draft  GPL
+5   cocos-nucifera       Embedded Stacked Enclosure HW     active TAPR
+6   robinia-pseudoacc... Remote Test Station HW/SW         draft  tbd
+7   pinus-rigida         Agathis Trunk Standard            draft  CC-BY-SA
+=== ==================== ================================= ====== =============
+
+
+3. References
+=============
+
+
+4. License
+=============
+
+This work is licensed under Creative Commons Attribution-ShareAlike 4.0
+International License.
+
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   coding: utf-8
+   End:
