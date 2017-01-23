@@ -2,7 +2,7 @@
     Repo:     agathis-project
     Title:    Agathis Proposals Index
     Author:   md-agathisproject
-          |                            |
+
 ---
 ## Agathis Proposals Index
 
