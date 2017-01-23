@@ -1,5 +1,5 @@
 
-|  .  | .   |
+|     |    |
 |-----|----|
 |AP Number:| **0**|
 |AP Title: |**Agathis Proposals Index**|
@@ -25,14 +25,14 @@
 AP# | Repo Name         |   Title                         | State| License
 ----|-------------------|---------------------------------|------|---------
  ?  | ?                 | ?                               |  ?   |  ?
-====|===================|=================================|======|=========
+====|================|==============================|======|=========
 
 #### 2.2. Informational
 
 AP# |Repo Name          |  Title                          |State | License
 ----|-------------------|---------------------------------|------|---------
 0   |agathis-project    |  Agathis Proposals Index        |active| CC-BY-SA
-====|===================|=================================|======|=========
+====|================|===============================|======|=========
 
 #### 2.3. Development
 
@@ -45,7 +45,7 @@ AP# |Repo Name          |  Title                          |State | License
 5   |cocos-nucifera     |  Embedded Stacked Enclosure HW  |active| TAPR
 6   |robinia-pseudoac...|  Remote Test Station HW/SW      |draft | tbd
 7   |pinus-rigida       |  Agathis Trunk Standard         |draft | CC-BY-SA
-====|===================|=================================|======|=========
+====|================|===============================|======|=========
 
 ## 3. License
 
