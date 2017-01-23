@@ -1,10 +1,8 @@
-|          |                            |
-|----------|----------------------------|
-|AP Number:| **0**                      |
-|Repo:     | **agathis-project**        |
-|Title:    |**Agathis Proposals Index** |
-|Author:   | **md-agathisproject**      |
-|          |                            |
+AP#:      0
+Repo:     agathis-project
+Title:    Agathis Proposals Index
+Author:   md-agathisproject
+          |                            |
 ---
 ## Agathis Proposals Index
 
