@@ -1,13 +1,14 @@
-AP: 0
-Repo Name: agathis-project
-Title: Agathis Proposals Index
-Status: Active
-Type: Informational
-Version: $Revision$
-Last Modified: $2017-01-21$
-Author: md-agathisproject@gmail.com
-License: CC BY-SA
-Content-Type: text/x-rst
+..
+ AP: 0
+ Repo Name: agathis-project
+ Title: Agathis Proposals Index
+ Status: Active
+ Type: Informational
+ Version: $Revision$
+ Last Modified: $2017-01-21$
+ Author: md-agathisproject@gmail.com
+ License: CC BY-SA
+ Content-Type: text/x-rst
 
 =======================
 Agathis Proposals Index
@@ -16,12 +17,13 @@ Agathis Proposals Index
 1. Abstract
 ===========
 
-AP-0 is the index of all Agathis Proposals.
+- AP-0 is the index of all Agathis Proposals.
 
-The AP numbers and repo names are assigned by one of the Agathis Project 
-admins.
+- The AP numbers and repo names are assigned by one of the Agathis Project
+  admins.
 
-This doc is updated when an Agathis Proposal is created or changes its status.
+- This doc is updated when an Agathis Proposal is created or changes its
+  status.
 
 
 2. Index by Type
@@ -33,7 +35,7 @@ This doc is updated when an Agathis Proposal is created or changes its status.
 === ==================== ================================= ====== =============
 AP# Repo Name            Title                             State  License
 === ==================== ================================= ====== =============
-
+?   ?                    ?                                 ?      ?
 === ==================== ================================= ====== =============
 
 2.2. Informational
