@@ -2,8 +2,8 @@
 |----------|----------------------------|
 |AP Number:| **0**                      |
 |Repo:     | **agathis-project**        |
-|AP Title: |**Agathis Proposals Index** |
-|AP Author:| **md-agathisproject**      |
+|Title:    |**Agathis Proposals Index** |
+|Author:   | **md-agathisproject**      |
 |          |                            |
 ---
 ## Agathis Proposals Index
@@ -11,7 +11,7 @@
 ### Process
 
 AP# | Repo Name         |   Title                         | State| License
-:---:|:------------------|:--------------------------------|:-----|:--------
+:---:|:-----------------|:--------------------------------|:-----|:--------
  ?  | ?                 | ?                               |  ?   |  ?
 
 ### Informational
