@@ -10,7 +10,7 @@
 
 AP# | Repo Name         |   Title                         | State| License
 :---:|:-----------------|:--------------------------------|:-----|:--------
- ?  | ?                 | ?                               |  ?   |  ?
+8   |[agathis-project](https://github.com/agathis-project/agathis-project)/AP-8.md  | AP Purpose and Guidelines       |draft | CC-BY-SA
 
 ### Informational
 
@@ -27,7 +27,7 @@ AP# |Repo Name          |  Title                          |State | License
 3   |[fagus-crenata](https://github.com/agathis-project/fagus-crenata)               |  Power Module HW                |active| TAPR
 4   |[salix-breweri](https://github.com/agathis-project/salix-breweri)               |  Root Module Microcontroller FW |draft | GPL
 5   |[cocos-nucifera](https://github.com/agathis-project/cocos-nucifera)             |  Embedded Stacked Enclosure HW  |active| TAPR
-6   |[robinia-pseudoacacia](https://github.com/agathis-project/robinia-pseudoacacia)|  Remote Test Station HW/SW      |draft | tbd
+6   |[robinia-pseudoacacia](https://github.com/agathis-project/robinia-pseudoacacia)|  Remote Test Station HW/SW       |draft | tbd
 7   |[pinus-rigida](https://github.com/agathis-project/pinus-rigida)                 |  Agathis Trunk Standard         |draft | CC-BY-SA
 
 ### License
