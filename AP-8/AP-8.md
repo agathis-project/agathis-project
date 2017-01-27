@@ -120,54 +120,49 @@
 
 #### 3.1. AP states
 
-- **Idea**
+- **Ide** Idea
  - decided by the author.
  - triggers the idea review.
 
-- **Draft**
+- **Dra** Draft
   - Informational and Process AP only
   - decided after idea review.
   - triggers the work on the draft.
 
-- **DD** (Draft.Design)
+- **DD** Draft.Design
   - Development AP only
   - decided after idea review.
   - triggers the work on the draft.design
 
-- **DI** (Draft.Implementation)
+- **DI** Draft.Implementation
   - Development AP only
   - decided after the review of completed work on draft.design.
   - triggers the work on the draft.implementation.
 
-- **Final**
+- **Dpl** Deployed
   - decided after the review of completed work on draft.implementation,
     draft or change process.
   - triggers the deployment.
 
-- **CP** (Change Process)
+- **CP** Change Process
   - decided after the review of accumulationg issues and competing APs.
   - triggers the work on change process.
 
-- **Deferred**
+- **Def** Deferred
   - decided based on resource availability.
   - it means the AP is set aside.
   - re-evaluate the environment and history before restarting the work.
   - this state occurs during actual work.
 
-- **Rejected**
+- **Rej (Rejected)**
   - decided based on AP relevance and quality.
   - it means the AP is junked.
   - this state concurs during review.
 
-- **Cancelled**
-  - similar to *Rejected*, but the state occurs during work, after a major
-    technical problem.
-
-- **Replaced**
+- **Rpl (Replaced)**
   - decided after the evaluation of accumulating issues and competing issues.
   - it means the AP is junked with replacement.
   - this state occurs during review.
-
 
 ### 4. AP Structure
 
