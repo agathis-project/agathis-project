@@ -10,7 +10,7 @@
 
 AP# | Repo Name         |   Title                         | State| License
 :---:|:-----------------|:--------------------------------|:-----|:--------
-8   |[agathis-project](https://github.com/agathis-project/agathis-project/blob/master/AP-8.md)  | AP Purpose and Guidelines       |draft | CC-BY-SA
+8   |[agathis-project](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8.md)  | AP Purpose and Guidelines       |draft | CC-BY-SA
 
 ### Informational
 
