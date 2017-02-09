@@ -12,125 +12,89 @@ Issues:	 https://github.com/agathis-project/agathis-project/issues
 
 ###1. What is AP?
 
-- AP stands for **Agathis Proposal**. An AP is a document providing
-  information or describing a development feature, a process or an environment
-  for the Agathis Project.
+- AP stands for **Agathis Proposal**. An AP is a document describes a 
+  development feature, a process or an environment for the Agathis Project.
 
-- The AP is developed and maintained as text file written in github flavoured 
+- AP is developed and maintained as text file written in github flavoured 
   markdown with attachments files as needed.
 
 ### 2. AP Types
 
-- **HW (Hardware Development)** describes the development of a hardware 
- feature(mechanical included) for the Agathis Project.
+- **HW (Hardware Development)** describes a hardware feature.
 
-- **SW (Software Development)** describes the development of a software 
- feature(firmware included) for the Agathis Project.
+- **SW (Software Development)** describes a software feature.
 
-- **Process** describes a process within Agathis Project community with the
-  purpose of increasing development productivity and quality of communication.
+- **Process** formalize how to do things around with increased efficiency.
  
-- **Informational** provides general guidelines or information to the 
-  Agathis Project community (not a feature) with the goals of improved 
-  communications and creative productivity; standards derived from development
-  APs fall under this type.  
+- **Informational** capture information worth documenting.
 
-### 3. The Workflow of Agathis Proposals
+### 3. AP Workflows
 
-- Following workflows are identified:
-  - Informational and Process AP Workflow
-  - HW Development Workflow
-  - SW Development Workflow 
+- Following workflows are identified
+  - **Informational and Process AP Workflow** - described herein.
+  - **HW Development Workflow** - documented in a separate AP.
+  - **SW Development Workflow** - documented in a separate AP.
 
-- This document convers only the first workflow, whereas the other workflows 
-  are convered by dedicated APs.
-
-**Informational and Process AP Workflow:**
+***
+  
+#### Informational and Process AP Workflow:
   
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1.png)
 
-1. The AP process begins with a new idea.
+1. There is an author with an idea:
+  - to engage the Agathis Project, the author should get a number:
+	- name the title of the idea.
+	- describe the idea as an *Abstract* chapter.
+	- provide the AP admin with the title and the abstract and ask for a number.
+	- AP admin provides a number, AP folder and document template.
 
-  - Keep the AP focused. If in doubt, split AP into several well-focused ones.
+2. Prepare the idea for review:
+	- the author forks the template and add content to the first two chapters:
+		- Abstract
+		- Rationale
+	- add any supporting files.
+	- pick a name from AP-10 Repository Names as repo field in the AP preamble.
 
-  - Each AP have an author: someone who writes the AP using the proper style and 
-  format, leads the discussions and builds community consensus around the idea.
+3. Review the idea with AP community:
+    - create a pull request.
+	- follow the **AP-9 AP Review Process**
+	- stop here if the idea is rejected; may go back and change the description 
+	of the idea and try later another review.
 
-2. Author get an AP number and a folder in the agathis-project repo.
+4. Enter the draft state:
+    - if review passed, the admin completes the github merge of AP document 
+	and included attachments.
+	- admin creates a repo with the name in the AP preamble and assign the 
+	appropriate access for the AP author.
+	- admin updates the state in the AP doc and **AP-0 Agathis Proposals Index**
+    to **Draft**
 
-3. Author sets the AP state to Idea.
+5. Work on the draft:
+	- Author works on Draft
+	
+6. Review the draft with AP community:
+	- create a review request issue.
+	- follow the **AP-9 AP Review Process**
+	- stop here if the draft is rejected; may go back and change the draft
+	and try later another review.
 
-4. Author last commmit before the review request should call "Idea Review" in 
-  the first line.
+4. Enter the released state:
+    - if review passed:
+		- author updates the state in the APD doc preamble to **Released** 
+		and - this must be the last change since the AP passed the 
+		review.
+		- admin updates the state in **AP-0 Agathis Proposals Index** to 
+		**Released**
+		- admin fills in the commit link (verifies first the AP doc	state is
+		update)
+		- the admin must now lockout any updates to the master.
+		- any post release changes of the AP (the document or any attachment) 
+		must start with creating a fork and updating the AP doc state to 
+		"Draft".
 
-5. Author open an issue titled **AP-? Idea Review Request** and identify the
-   @arbiters in the body of the issue.
-
-6. Agathis Project admin team release an anouncement about this review being 
-   open to increase community awareness.
-
-7. Comments to the review are collected.
-   
-8. Author fixes and reconciles all review findings.
-
-9. Author request approval with issue titled **AP-? Idea Approval Request** 
-
-10. Arbiters review fixes and reconciliations then comment issue with APPROVED
-  or REJECTED; all arbiters shall respond; simple majority needed to pass the 
-  review.
-
-  - If Idea is not approved, then change the AP state to **Rejected**.
-  
-  - If Idea is approved, then change the AP state to **Draft**.
-
-11. Author works to elaborates the idea to the draft completion.  
-
-12. Author last commmit before the review request should call "Draft Review" in 
-  the first line.
-
-13. Author open an issue titled **AP-? Draft Review Request** and identify the
-   @arbiters in the body of the issue.
-
-14. The arbiters release an anouncement about this review open to increase 
-  community awareness.
-
-15. Comments to the review are collected.
-   
-16. Author fixes and reconciles all review findings.
-
-17. Author request approval with issue titled **AP-? Draft Approval Request** 
-
-18. Arbiters review fixes and reconciliations then comment issue with APPROVED
-  or REJECTED; all arbiters shall respond; simple majority needed to pass the 
-  review.
-
-  - If Draft is not approved, then change the AP state to **Rejected**.
-  
-  - If Draft is approved, then change the AP state to **Release**.
-  
-19. As the AP is used by the community, issues start to accumulate.
-  Any member may ask for an **AP-? Release Review Request** with an issue when 
-  needed; call the @arbiters in the body of the issue.
-  
-20. The arbiters decide about the review by either:
-  - replacing **Request** with **IN PROGRESS** in the title and release a
-  community anouncement.
-  - replacing **Request** with **REJECTED** in the title and closing the review 
-   request issue it with an argument.
-
-21. Author change the state of the AP to **Draft** then fixes and reconciles 
-  all accumulated issues and new comments.
-
-22. Author request approval with issue titled **AP-? Draft Approval Request** 
-
-23. Arbiters review fixes and reconciliations then comment issue with APPROVED
-  or REJECTED; all arbiters shall respond; simple majority needed to pass the 
-  review.
-
-  - If Release is not approved, then change the AP state to **Rejected**.
-  
-  - If Release is approved, then change the AP state to **Released**.
-
+5. Review the issues with AP community
+		
+		
 ### 4. AP Structure
 
 - **Title**
