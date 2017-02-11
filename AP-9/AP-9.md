@@ -1,5 +1,5 @@
     AP: AP-9
-    Title: AP Review Process
+    Title: AP Review
     Type: Process
     License: CC-BY-SA
     State: Draft
@@ -7,42 +7,47 @@
     Issue-Tracker:
 
 
-## AP Review Process
+## AP Review
 
 ### 1. Summary and Assumptions
 
-This document aims to describe the review process followed for this project (agathis). Any mention of review process in other documents produces by the project can be referenced to this AP.
+This document aims to describe the review process followed for this project (agathis). Any mention of reviews in other documents produced by the project can be referenced to this AP.
 
-Since this project is hosted on [github](https://github.com/agathis-project) it will try to use the existent features on this site. We will also try to describe how to use these features rather tha assume familiarity with them.
+Since this project is hosted on [github](https://github.com/agathis-project) it will try to use the existent features on this site. We will also try to describe how to use these features rather than assume familiarity with them.
 
-### 2. Review Process
+All changes to an AP ([**issues**](https://guides.github.com/features/issues/) or [**pull requests**](https://guides.github.com/activities/forking/)) that happen without changing the state of the AP during the normal [github flow](https://guides.github.com/introduction/flow/) are not the object of this document.
 
-#### 2.1 Start
+### 2. Definitions
 
-To start a review, the relevant AP documents have to be in github, be clearly identified (in a separate repository or a specific folder of a repository) and have 0 pull requests opened.
+- **Review** is the process that takes place when transitioning beween the states defined in [AP-8](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8.md)
+- **Admin** refers to members of the project administration team
 
-A [**issue**](https://guides.github.com/features/issues/) has be opened by the person responsible for changing the state of the AP. We'll refer to this as the *start issue*.
+### 3. Review
 
-Since github has **labels** and **milestones** to allow for the easy sorting of issues it is recommended that the start issue has the **label**: **review** and **milestone**: the name of the target state of the review process.
+#### 3.1 Start
 
-#### 2.2 Contribute
+To start a review, the relevant AP documents have to be in github, be clearly identified (in a separate repository or a specific folder of a repository) and have 0 pull requests and 0 issues opened.
 
-Contributing to a review can be made in different ways. For small changes or targeted comments related to the AP in review you can comment directly to the *start issue*, or open a different issue with the same **label** and **milestone**.
+An issue has to be opened by the person responsible for changing the state of the AP. We'll refer to this as the *review issue*. Since github has **labels** to allow for the easy sorting of issues it is recommended that the *review issue* has the following labels: **review**, **AP-???** (the name of the AP) and **current_state** (the current state the AP is in).
 
-Opening another issue allows tracking of everything related to the review and declutters the *start issue* from multiple discussions going on in parralel.
+#### 3.2 Voting
 
-For big changes the recommended way is to [fork](https://guides.github.com/activities/forking/) the AP documents in review, make the changes and then initiate a pull request. It is recommended to reference the *start issue* when you create the pull request.
+It is recommended that there is a time limit specified in the *review issue* but he author. If it's not there the default time limit is 5 days.
 
-#### 2.3 End
+Once the *review issue* is opened the interested parties can vote on changing the state of the AP. The voting should follow the [apache voting process](https://www.apache.org/foundation/voting.html) and it should be done as comments to the *review issue*.
 
-To close an review the default policy is to assume that if there are no comments then the review is done. This can translate in the following algorithm:
+#### 3.3 End
 
-- if there are any pull requests for the AP documents resolve and merge them.
-- filter the issues to show only the ones with the **label** and **milestone** that refer to the review
-- if there are any other issues opened close them
-- if for 5 days only the *start issue* is in the filtered list then the review can be closed by sclosing the **start issue*
+After the time limit expires the votes are counted and the result shows if the state change is accepted or not. Any disagreements about the vote counts should be resolved by the **Admin**.
 
-### 3. License
+### 3.4. Review Example(s)
 
-- This work is licensed under Creative Commons Attribution-ShareAlike 4.0
-  International License.
+Suppose AP-314 is in state *Draft* and after work and discussions with the team the author is ready to change the state to *Release*.
+
+The author opens the *review issue* with the labels: **review**, **AP-314** and **Draft** and specifies a time limit of 10 days for voting.
+
+At the end of the voting period there were three votes expressed : +1, -0.5 and 0. In this case the AP will change the state to *Release*.
+
+### 4. License
+
+- This work is licensed under Creative Commons Attribution-ShareAlike 4.0 International License.
