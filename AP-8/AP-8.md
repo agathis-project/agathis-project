@@ -1,322 +1,180 @@
-    AP: AP-8
-    Title: AP Purpose and Guidelines
-    Type: Process
-    License: CC-BY-SA
-    State: Draft
-    Author: md-agathisproject
-    Issue-Tracker:	
+```
+AP:      8
+Title:   AP Guideline
+Repo:    agathis-project
+State:   Draft
+Type:    Process
+License: CC-BY-SA
+Author:  md-agathisproject
+Issues:	 https://github.com/agathis-project/agathis-project/issues
+```
+
+# AP Guideline
+
+## 1. Abstract
+
+The work on Agathis Project is organized using Agathis Proposals. The Agathis 
+Proposal describes a development feature, a process or a formalized information 
+for the Agathis Project. This document specifies how to work the Agathis 
+Proposal from idea to release.
+
+## 2. Rationale
+AP Guideline helps improving:
+  1. communication through documentation consistency 
+  2. productivity by using well defined workflows
+
+## 3. Content
+
+### 3.1 AP Types
+
+- **HW (Hardware Development)** documents a hardware feature.
+
+- **SW (Software Development)** documents a software feature.
+
+- **Process** documents how to do things around here with increased efficiency.
+ 
+- **Informational** documents useful information.
+
+### 3.2. AP Workflow
+
+- the following workflows are identified:
+  - **Informational and Process AP Workflow** - described herein.
+  - **HW Development Workflow** - described in a separate AP.
+  - **SW Development Workflow** - described in a separate AP.
+
+***
+  
+### Informational and Process AP Workflow:
+  
+![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1.png)
+
+#### 3.2.1. There is an author with an idea:
+- to engage the Agathis Project, the author should get a number; here is how:
+  1. title the idea
+  2. describe the idea in *Abstract* chapter
+  3. provide admin with the title and the abstract and ask for a number
+- admin responds:
+  1. check AP title and abstract for sanity
+  2. creates a new AP folder and with an AP document template.
+  3. list the new AP in the AP Index
+
+#### 3.2.2. Prepare the idea for review:
+- author forks the template and add content to the first two chapters:
+	- Abstract
+	- Rationale
+- author adds supporting files as needed
+
+#### 3.2.3. Idea Review:
+- author creates a pull request
+- admin anounces the Idea Review
+- all folks follow the [**AP-9 AP Review Process**] (https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md)
+- author stops here if idea is rejected; possible to go back later to 
+  change the idea description and try another review.
+
+#### 3.2.4. Entering the Draft state:
+- admin merge the AP
+- admin updates the state to "Draft" in AP-0 AP Index
+
+#### 3.2.5. Work on the Draft:
+- author first commit must have the preamble state updated to Draft
+- author works on Draft
+- author commits as necessary
+- author may engage community for comments before entering the formal review
+  by opening an issue; use **"Draft Comments Request"** label.
 	
+#### 3.2.6. Draft Review:
+- create a review request issue; use *"Draft Review Request"* label
+- admin anounces the Draft Review
+- all folks follow the [**AP-9 AP Review Process**] (https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md)
+- stop here if the draft is rejected; possible to go back later to change 
+  the draft and try another review
 
-## AP Purpose and Guidelines
+#### 3.2.7. Entering the Released State:
+- author updates the state in the AP doc preamble to **Released**
+- admin updates the state in **AP-0 Agathis Proposals Index**
+- follow github process [**Creating Releases**](https://help.github.com/articles/creating-releases/)
 
+#### 3.2.8. Issues during Released State:
+- issues may be open by anyone; use Release# and AP-# labels to identify the 
+  object of the issue.
+- author responds to all issues within 5 days (normal case) or 30 days 
+  (exceptions); passing 30 days limit triggers the change of the author (see below)
 
-###1. What is AP?
+#### 3.2.9. Issues Review:
+- **Issues Review** is the only mechanism to change a release (generate a new release?) !!!!!!!!!!!!!!!!
+- triggered by anyone who creates an issue titled **Issues Review Request**
+  and a rationale in the body; use Release# and AP-# labels to identify the 
+  object of the issue. 
+- the request is confirmed by admin who changes the state of the AP to 
+  draft in AP-0 list; !!!!! should have some link pointing to last release? or to the list of the releases? !!!!!!!!!!!!!!!
+- admin anounces the Issues Review
+- all folks follow the [**AP-9 AP Review Process**] (https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md)
 
+#### 3.2.10. New release !!! see [github release process] (https://help.github.com/articles/creating-releases/) !!!! how we deal with next releases? !!!!!!!!!!!!!!!!!
 
-- AP stands for Agathis Proposal. An AP is a document providing
-  information or describing a development feature, a process or an environment
-  for Agathis Project.
+### 3.3. AP Structure
 
-- The AP is developed and maintained as text file with attachments files where
-  needed. While the text files are sufficient to document firmware or
-  software features, there are places where text files are not sufficient.
-  Use attachments as needed for better clarifying and understanding of AP.
-
-### 2. AP Types
-
-- **Development AP** describes a new feature or implementation for 
-  Agathis Project.
-
-- **Informational AP** provides general guidelines or information to the 
-  Agathis Project community (not a feature) with the goals of improved 
-  communications and creative productivity.
-
-- **Process AP** describes a process within Agathis Project community with the
-  purpose of increasing development productivity and communication quality.
-
-### 3. APs and Work Flow
-
-- The AP process begins with a new idea.
-
-- Small enhancements or patches often don't need a AP and can be injected into
-  the Agathis Project development workflow with a pull request on github.
-
-- Keep the AP focused. Unfocused APs will be amended by Agathis Project 
-  community. If in doubt, split AP into several well-focused ones.
-
-- Each AP have an author (champion or owner) -- someone who writes the AP
-  using the proper style and format, leads the discussions and builds community
-  consensus around the idea.
-
-- Author releases AP idea to repository and post a review request.
-  - Get an AP number from the Agathis Project Admin Team.
-  - Set AP *State* to Idea;
-  - List the attachments in the "Attachments" chapter and have them ready
-    for commit in appropriate folder structure.
-  - Commit the AP file(s) with following message to the agathis-project repo in
-    the ap-idea folder: 
-	  - **AP-?: Released to Idea State**
-
-- Author initiates the review process using the **Issue** feature in github
-
-- Author fixes and reconciles all findings found during review.
-
-- Author decides about the draft phase path; choose either:
-  - draft (for most of the *informational* and *process* APs)
-  - draft.design then draft.implementation (for most of the *developmental* 
-    APs)
-
-- The workflow described below is for the **draft** path; the workflow for
-  **draft.design** then **draft.implementation** is very similar and
-  not detailed here to preserve simplicity of this document.
-
-- Set state to *Draft*
-
-- Commit AP with message:
-  - *AP-?: Released to Draft State*
-  - *[list of changes]**
-
-- Complete the outstanding work; commit when ready for review.
-
-- Change the AP *State* to Final.
-
-- Commit the AP file(s) with message:
-  - *AP-?: Released to Final State*
-  - *[list of changes]**
-
-- The AP in Final state is deployed as:
-  - sub-part of a software release
-  - new product or product change
-  - new process or process change
-
-- The term of *deployment* means or triggers:
-  - start using the AP (an Informational or Process AP)
-  - tell the world the AP is available
-  - ship a HW piece or a system.
-  - release software that incorporates the change.
-
-- As the AP is used by the community, unresolved issues start to accumulate.
-
-- As the time passes, other competing AP may start to be developed.
-
-- The overall status of the AP quality is monitored by Agathis Project 
-  community.
-
-- The Agathis Project community decides to:
-  - do a change process (this workflow continues).
-  - replace the AP (this workflow stops).
-  - reject the AP (this workflow stops).
-
-- Do the Change Process (CP). (The CP is only briefly described here;
-  a subsequent AP will be dedicated to CP.)
-
-- Review the CP.
-
-- If findings are not cleared, then reject the AP.
-
-- Release the AP to Final.
-
-- Deploy the AP.
-
-#### 3.1. AP states
-
-- **Ide** Idea
- - decided by the author.
- - triggers the idea review.
-
-- **Dra** Draft
-  - Informational and Process AP only
-  - decided after idea review.
-  - triggers the work on the draft.
-
-- **DD** Draft.Design
-  - Development AP only
-  - decided after idea review.
-  - triggers the work on the draft.design
-
-- **DI** Draft.Implementation
-  - Development AP only
-  - decided after the review of completed work on draft.design.
-  - triggers the work on the draft.implementation.
-
-- **Dpl** Deployed
-  - decided after the review of completed work on draft.implementation,
-    draft or change process.
-  - triggers the deployment.
-
-- **CP** Change Process
-  - decided after the review of accumulationg issues and competing APs.
-  - triggers the work on change process.
-
-- **Def** Deferred
-  - decided based on resource availability.
-  - it means the AP is set aside.
-  - re-evaluate the environment and history before restarting the work.
-  - this state occurs during actual work.
-
-- **Rej (Rejected)**
-  - decided based on AP relevance and quality.
-  - it means the AP is junked.
-  - this state concurs during review.
-
-- **Rpl (Replaced)**
-  - decided after the evaluation of accumulating issues and competing issues.
-  - it means the AP is junked with replacement.
-  - this state occurs during review.
-
-### 4. AP Structure
-
+- **Title**
+  - consistent with the content.
 
 - **Preamble**
-  - headers containing meta-data about the AP.
+  - headers containing meta-data about the AP as listed:
 
-- **Abstract**
+```
+AP:      [AP number]
+Title:   [title]
+Repo:    [agathis-project]
+State:   [Idea | Draft | Released | Rejected]
+Type:    [Informational | Process]
+License: [license]
+Author:  [gihub username]
+Issues:  [where the issues are tracked, url]
+```  
 
-- **Motivation and Rationale**
+- **1. Abstract**
+  - keep it short; 
+  - it's a *must have* for Idea Review
+  
+- **2. Rationale**
+  - provide a logical explanation about the value of this AP;
+  - it's a *must have* for Idea Review
 
-- **Compatibility**
+- **3. Content**
+  - this is the descriptive part of the AP.
+  
+- **4. References**
 
-- **Design Specifications**
-  - describe the technical details
-    and parameters of the new feature; describe the interface with the existing
-    system. Use attachments as needed and list them in the main AP.
+- **5. License**
+  - CC-BY-SA is the preferred license for *Process* and *Informational* APs.
+  
+- **6. Attachments**
+  - list the attachments; include visual prints for non-text files.
+  - note the application software used for each non-text source.
 
-- **Implementation**
-  - implement the specification in real code or HW prototype and test it.
-    Use attachments as needed and list them in the main AP.
+### 3.4. Changing AP Author
 
-- **Resources**
-  - optional
+- author may change; always seek agreement; adding a new author is preferred 
+  for a replacement.
+  
+- APs are declared orphaned if isues are not commented by author within 30 days.
 
-- **References**
-  - optional
+- admin makes an anouncement about the orphaned AP and the seek for a new 
+  author.
 
-- **License**
-  - list the license(s): type and where used.
+- anyone interested in taking the author role should open an issue for that AP.
 
-- **Attachments**
-  - list the attachments
+- admin decides about the new author and assign the rights to the repo.
 
-### 5. AP Formats and Templates
+- author change is effective when the AP preamble is updated by author.
 
-- The text part of the AP is written in markdown. This format allows
-  for rich markup supported by github.
+## 4. References
 
-### 6. AP Header Preamble
-
-Each AP begins with headers preamble as listed below
-
-    AP: [AP number]
-    Title: [AP title]
-    Type: [type]
-    License: [license]
-    State: [state]
-    Author: [names, emails, CSV]
-    Issue-Tracker: [Issue Tracker URL]
-
-- **AP: [AP number]**
-  - Defined by admin on author's request.
-
-- **Title: [title]**
-  - Defined by the author; it may change during idea phase; never after.
-
-- **Type: [type]**
-  - Defined by the author
-  - Informational
-  - Development
-  - Process
-
-- **License: [license]**
-  - Defined by the author.
-
-- **State: [state]**
-  - Defined by the author.
-
-- **Author: [names, emails, csv]**
-  - Defined by the author.
-  - List the name(s) and email(s) of the author(s).
-
-- **Issue-Tracker: [Issue Tracker URL]**
-  - Defined by the author.
-  - Indicates the web address of the Issue Tracker used to monitor the issues
-    related to this AP.
-
-### 7. Attachments
-
-- Attachments are files that complement the main AP. AP may include source code,
-  diagrams, schematics, bill of materials, PCB design, test reports etc;
-  in short, the attachments contain the information that can't fit in the
-  formal structure of the AP and within a reasonable number of lines.
-
-- The non-text attachments are provided in two forms: source and presentation.
-  The source form needs a specialized (CAD) application to edit/change its
-  content. The presentation form is easy to read by common applications
-  (pdf reader, web browser).
-
-- The attachments can be grouped in folder/directories as needed to make
-  the attachment list AND the development work easy manageable.
-
-- The naming of the attachments follows the convention:
-
-  AP-x-[y|z].ext, where:
- - y is the index for the attachment (1, 2...); use as many digits as needed,
-   but no more.
- - z is the acronym or name of the file or folder (package of files)
- - use y or z as needed for easy files naming management
- - ext is the file extension
-
-### 8. Reporting AP Issues
-
-- While the AP is in review use the code review feature (if supported by
-  the project hosting) or else the *Mailing List*.
-
-- While the AP is Draft, Final, Deferred, Rejected or EOL
-  use the *Issue Tracker*.
-
-### 9. Changing the AP
-
-- Any AP changes will follow the change process described in subsequent AP(s).
-
-### 10. Transferring AP Ownership
-
-- Sometimes it becomes necessary to transfer ownership of APs to a new
-  champion/owner/author. Where possible - it is recommended to retain the
-  original author as a co-author of the transferred AP.
-
-- A good reason to transfer ownership is because the original author is
-  no longer available.
-
-- A bad reason to transfer ownership is because of disagreement with the
-  direction of the AP. It is advisable to build consensus around a AP,
-  but if that's not possible, then submit a competing AP.
-
-- If someone is interested in assuming ownership of a AP, send a message
-  to the *Mailing List*.
-
-### 11. AP Editing Checklist
-
-- Overall compliance with AP-8 (this doc)
-
-- Title accurately describes the content.
-
-- Edit the AP for language (spelling, grammar, sentence structure, etc.),
-  markup and code style.
-
-- Assign a AP number (the next available number).
-
-- List the AP in AP-0.
-
-
-### 12. References and Footnotes
-
-- this document is inspired from http://www.python.org/dev/peps/pep-0001/
-
-### 13. License
+## 5. License
 
 - This work is licensed under Creative Commons Attribution-ShareAlike 4.0
   International License.
 
-### 14. Attachments
+## 6. Attachments
 
 - AP-1-1
   - AP-1-1.odg (source)
