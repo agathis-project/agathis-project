@@ -99,9 +99,9 @@ To engage the Agathis Project, the author should get a number; here is how:
   4. create a branch named AP-# <Title>; any other branches related to this AP 
      shall use this branch name as prefix followed by ___<specific identifier>.
   
-  4. comment the issue and close it.
+  5. comment the issue and close it.
   
-  5. create a community anouncement for this event.
+  6. create a community anouncement for this event.
   
 ** The author prepares the idea for review:**
   - work on branch AP-# <Title>
