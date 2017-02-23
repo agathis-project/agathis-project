@@ -96,15 +96,15 @@ To engage the Agathis Project, the author should get a number; here is how:
 	 
   3. list the new AP at idea state in the AP Index.
   
-  4. create a branch named AP-# <Title>; any other branches related to this AP 
-     shall use this branch name as prefix followed by --<specific identifier>.
+  4. create a branch named AP-# "Title"; any other branches related to this AP 
+     shall use this branch name as prefix followed by --"specific identifier".
   
   5. comment the issue and close it.
   
   6. create a community anouncement for this event.
   
 ** The author prepares the idea for review:**
-  - work on branch AP-# <Title>
+  - work on branch AP-# "Title"
 	- not too much not too little: just enough for the team to get the idea
 	  and comment before too much work may get to waste.
     - commit as needed.
