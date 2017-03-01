@@ -78,9 +78,9 @@ AP Guideline helps improving:
 
 **Someone (called author herein) got an idea worth pursuing:**
 To engage the Agathis Project, the author should get a number; here is how:
-  1. Go to agathis-project repo and open an new issue:
+    - go to agathis-project repo and open an new issue:
     - label it with **New idea**:
-	- title is same as AP title.
+	- title is with intended AP title.
     - fill in the comments area with the abstract of the AP idea.
 	- append @admin tag at the end of the abstract.
 	- submit.
@@ -96,15 +96,15 @@ To engage the Agathis Project, the author should get a number; here is how:
 	 
   3. list the new AP at idea state in the AP Index.
   
-  4. create a branch named AP-# "Title"; any other branches related to this AP 
-     shall use this branch name as prefix followed by --"specific identifier".
+  4. create a branch named *AP-? Title*; any other branches related to this AP 
+     shall use this branch name as prefix.
   
   5. comment the issue and close it.
   
   6. create a community anouncement for this event.
   
 ** The author prepares the idea for review:**
-  - work on branch AP-# "Title"
+  - work on branch *AP-? Title*
 	- not too much not too little: just enough for the team to get the idea
 	  and comment before too much work may get to waste.
     - commit as needed.
@@ -121,13 +121,14 @@ To engage the Agathis Project, the author should get a number; here is how:
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1p2.png)
 
 **Entering the Draft State:**
-- admin merge the AP as voted with the preamble state updated to Draft.
-- admin updates the state to "Draft" in AP-0 AP Index.
+- if review vote passed: 
+  - admin merge the AP as voted with the preamble state updated to Draft.
+  - admin updates the state to "Draft" in AP-0 AP Index.
 
 **Work on the draft:**
 - author creates a branch and edit AP;  commit as needed.
 
-**Draft Pull Request
+**Draft Pull Request**
 - author open a pull request when ready.
 - discuss and fix issues, comments; commit as needed.
 
@@ -138,8 +139,9 @@ To engage the Agathis Project, the author should get a number; here is how:
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1p3.png)
 
 **Entering the Released State:**
-- admin merge the AP as voted with the preamble state updated to Released.
-- admin updates the state to "Released" in AP-0 AP Index.
+- if vote passed:
+  - admin merge the AP branch with the preamble state updated to Released.
+  - admin updates the AP state to "Released" in AP Index.
 
 **Work on the release:**
 - issues accumulating
@@ -155,14 +157,14 @@ To engage the Agathis Project, the author should get a number; here is how:
 **Released Review**
 - follow AP-9 Review.
 
-Note: for Informational and Process AP there is only one active and valid 
+Note: for Informational and Process AP, at any time, there is only one valid 
 release: the master (default branch).
+
+Exception: AP-0 AP Index content is always edited on the master; this is needed 
+to be able to fast update the AP changes and avoid clutter.
 
 
 ### 3.4. AP Structure
-
-- **Title**
-  - consistent with the content.
 
 - **Preamble**
   - headers containing meta-data about the AP as listed:
@@ -180,11 +182,11 @@ Issues:  [where the issues are tracked, url]
 
 - **1. Abstract**
   - keep it short; 
-  - it's a *must have* for Idea Review
+  - it's a *must* for Idea Review
   
 - **2. Rationale**
   - provide a logical explanation about the value of this AP;
-  - it's a *must have* for Idea Review
+  - it's a *must* for Idea Review
 
 - **3. Content**
   - this is the descriptive part of the AP.
@@ -212,9 +214,13 @@ Issues:  [where the issues are tracked, url]
 
 - admin decides about the new author and assign the rights to the repo.
 
-- author change is effective when the AP preamble is updated by author.
+- author change is effective when the author in the AP preamble is updated by 
+  admin
 
 ## 4. References
+
+- github pull request workflow
+- AP Review
 
 ## 5. License
 
@@ -226,5 +232,8 @@ Issues:  [where the issues are tracked, url]
 - AP-1-1
   - AP-1-1.odg (source)
   - AP-1-1.png (presentation, image)
-  - content: flowchart
+  - AP-1-1p1.png (presentation, image)
+  - AP-1-1p2.png (presentation, image)
+  - AP-1-1p3.png (presentation, image)  
+  - content: flowchart diagrams
   - editor: LibreOffice Draw 3.3.3
