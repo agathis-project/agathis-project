@@ -43,21 +43,22 @@ A number of four types of Agathis Proposals are identified:
   markdown formated.
   
 - **Development APs**  are born as ideas in agathis-project repo then moved and 
-  grown under their own repo. 
+  grown under their own repo: 
   - while hosted in agathis-project repo, they are located in their respective 
-  AP folder. *AP-?.md* is the main text file, markdown formated.
+  AP folder, where *AP-?.md* is the main text file, markdown formated.
   - after they pass the idea review, development APs are moved in their own 
-  repo with AP-?.md file becoming readme.md in the repo's root.
+  repo with *AP-?.md* file becoming *readme.md* in the repo's root.
   
-- the **master** (default) branch can be modified only through merging a pull 
-  request; actual work shall be done only on a non-master branch.
+- the **master** (default) branch can be modified only through merging pull 
+  requests; actual work shall be done on a non-master branch.
   
 - all merges in agathis-project repo are done by admins only. 
 
-- the merges in development repo are done by authors with admin rights.
+- the merges in development repos are done by their respective authors with 
+  admin rights.
 
 ### 3.3. Informational and Process AP Workflow
-The workflows for HW and SW APs are described in their respective docs.
+Note: the workflows for HW and SW APs are described in their respective docs.
 
 ***
   
@@ -97,8 +98,6 @@ Agathis Project, the author should get a number:
   4. create a branch named *AP-?-Title-Idea*.
   
   5. comment the issue and close it.
-  
-  6. create a community anouncement for this event.
   
 **The author prepares the idea for review:**
   - work on branch *AP-? Title*
@@ -164,6 +163,10 @@ Note2: *AP-0 AP Index* is always edited on the master branch.
 Note3: Workflows already in progress should adapt on-the-fly to latest relevant 
 APs.
 
+Note4: The admin updates the Agathis Project community with one announcement 
+for each workflow event(branches, pull requests, merges, reviews and state 
+changes).
+
 ### 3.4. AP Structure
 
 - **Preamble**
@@ -201,7 +204,7 @@ Author:  [github username]
 
 ### 3.5. Changing AP Author
 
-- the author is a reponsibility, not a title; fulfilling the author's role 
+- the author is a responsibility, not a title; fulfilling the author's role 
   requires, beside the creativity for the initial idea, time and effort to 
   complete the AP and maintain it through its lifecycle.
 
