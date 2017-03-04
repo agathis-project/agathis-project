@@ -6,17 +6,17 @@ State:   Draft
 Type:    Process
 License: CC-BY-SA
 Author:  md-agathisproject
-Issues:	 https://github.com/agathis-project/agathis-project/issues
 ```
 
 # AP Guideline
 
 ## 1. Abstract
 
-The work on Agathis Project is organized using Agathis Proposals. An Agathis 
-Proposal describes a development feature, a process or a formalized information 
-for the Agathis Project. This document specifies how to work the Agathis 
-Proposal from idea to release.
+The work on Agathis Project github organization is organized using Agathis 
+Proposals. An Agathis Proposal describes a development feature, a process or a 
+formalized information. This document specifies the general framework of 
+Agathis Proposals and specifically how to drive the Process and Information APs 
+from idea to release.
 
 ## 2. Rationale
 AP Guideline helps to:
@@ -36,27 +36,25 @@ A number of four types of Agathis Proposals are identified:
  
 - **Informational AP** documents useful information.
 
-### 3.2. APs and the Repository
+### 3.2. AP and Repository
 
 - **Informational and Process APs** are always located in agathis-project repo, 
-  under their *AP-? folder*; the main text file, markdown formated, is 
-  named *AP-?.md*.
+  under their respective AP folder; *AP-?.md* is the main text file, 
+  markdown formated.
   
-- During idea state, **Development APs** are located in agathis-project repo, 
-  under their *AP-?* folder; the AP text file, markdown formated, is *AP-?.md*.
-  These APs are moved into their own repo when they pass the idea 
-  review; at the time of this move, the *AP-?.md* file is renamed as 
-  *readme.md* and stored in the root of the repo, becoming the main 
-  documentation file.
+- **Development APs**  are born as ideas in agathis-project repo then moved and 
+  grown under their own repo. 
+  - while hosted in agathis-project repo, they are located in their respective 
+  AP folder. *AP-?.md* is the main text file, markdown formated.
+  - after they pass the idea review, development APs are moved in their own 
+  repo with AP-?.md file becoming readme.md in the repo's root.
   
-- The github **master** branch of any repo can be modified only through merge 
-  preceded by a pull-request; direct master editing is horrible.
+- the **master** (default) branch can be modified only through merging a pull 
+  request; actual work shall be done only on a non-master branch.
   
-- Actual editing of a repo shall be done only on branches; these branches are
-  merged into the master following a pull-request.
-  
-- All merges in agathis-project repository (holding informational and 
-  process APs) are done by admins only. 
+- all merges in agathis-project repo are done by admins only. 
+
+- the merges in development repo are done by authors with admin rights.
 
 ### 3.3. Informational and Process AP Workflow
 The workflows for HW and SW APs are described in their respective docs.
@@ -67,64 +65,66 @@ The workflows for HW and SW APs are described in their respective docs.
 
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1p1.png)
 
-Process and Informational APs have three main states: **Idea, Draft and Release**
+Process and Informational APs have three main states: **Idea, Draft and Release**.
 
 #### 3.3.1. Idea State
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1p2.png)
 
-**Someone (called author herein) got an idea worth pursuing:**
-- To engage the Agathis Project, the author should get a number; here is how:
-  - go to agathis-project repo and **open an new issue:**
-  - label it with **New idea**:
-  - **title** is with intended AP title.
-  - fill in the comments area with the **abstract of the idea**.
-  - append **@admin** tag at the end of the abstract.
-  - **submit**.
+**Someone (called author herein) got an idea:** to engage the 
+Agathis Project, the author should get a number:
+
+  1. go to agathis-project repo and **open an new issue** labelled **New idea**.
+
+  2. **title** it with intended AP title.
+
+  3. fill in the comments area with the **abstract of the idea**.
+
+  4. append **@admin** tag at the end of the abstract.
+
+  5. **submit** the issue.
 	
 **This issue will trigger the admin response:**
 
   1. check AP title and summary for sanity; if the idea is insane skip to 
-     last step.
+     step 5.
 	 
   2. create a new AP folder with an AP document template; fill in preamble 
      and abstract; the AP number should be taken as the next available in the 
 	 AP Index.
 	 
-  3. list the new AP at idea state in the AP Index.
+  3. list the new AP at *idea* state in the AP Index.
   
-  4. create a branch named *AP-? Title*; any other branches related to this AP 
-     shall use this branch name as prefix.
+  4. create a branch named *AP-?-Title-Idea*.
   
   5. comment the issue and close it.
   
   6. create a community anouncement for this event.
   
-** The author prepares the idea for review:**
+**The author prepares the idea for review:**
   - work on branch *AP-? Title*
 	- not too much, not too little: just enough for the team to get the idea
 	  and comment - before too much work may get to waste or block team 
 	  contributions.
     - commit as needed.
-  - get ready for pull request.
 	
 **Idea Pull Request**
   - the author open a pull request when ready.
-  - discuss and fix issues, comments; 
+  - discuss and fix issues, comments. 
   - commit as needed.
   
 **Idea Review**
-- follow AP-9 Review.
+- follow process described in AP-9 Review.
 
 #### 3.3.2. Draft State
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1p3.png)
 
 **Entering the Draft State:**
 - if review vote is passed: 
-  - the admin merge the AP as voted with the preamble state updated to Draft.
-  - the admin updates the state to "Draft" in AP-0 AP Index.
+  1. the admin merge the AP as voted with the preamble state updated to Draft.
+  2. the admin updates the state to "Draft" in AP-0 AP Index.
 
 **Work on the draft:**
-- the author creates a branch and edit AP.
+- the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
 - commit as needed.
 
 **Draft Pull Request**
@@ -132,37 +132,36 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
 - discuss and fix issues, comments; commit as needed.
 
 **Draft Review**
-- follow AP-9 Review.
+- when ready, enter draft review: follow AP-9 Review.
 
 #### 3.3.3. Released State
 ![AP Workflow](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8-1p4.png)
 
 **Entering the Released State:**
 - if the review vote is passed:
-  - the admin merge the AP branch with the preamble state updated to Released.
-  - the admin updates the AP state to "Released" in AP Index.
+  1. the admin merge the AP branch with the preamble state updated to Released.
+  2. the admin updates the AP state to "Release" in AP Index.
 
 **Work on the release:**
-- issues accumulating
-- the author creates a branch *AP-# Title ___Release* and edit when needed; all 
-  edits in the released state should refer to an issue; in other words no 
-  edits without issues.
-- commit as needed; commits messages should refer to addressed issues.
+1. issues accumulating.
+2. the author creates a branch *AP-?-Title-Release*. 
+3. every commit in the release state should refer to an issue; in other words,
+   no commits without issues.
 
 **Release Pull Request**
-- the author open a pull request when ready.
-- discuss and fix issues, comments.
-- commit as needed.
+1. the author open a pull request when ready.
+2. discuss comments and fix issues.
+3. commit as needed.
 
 **Release Review**
-- follow AP-9 Review.
+- when ready, enter draft review: follow AP-9 Review.
 
 Note1: for Informational and Process AP, at any time, there is only one valid 
-release: the master (default branch) - the latest and greatest.
+release: the master (default branch) - is the latest and the greatest.
 
-Exception to Note1: AP-9 AP Index content is always edited on the master.
+Note2: *AP-0 AP Index* is always edited on the master branch.
 
-Note2: Workflows already in progress should adapt on-the-fly to latest relevant 
+Note3: Workflows already in progress should adapt on-the-fly to latest relevant 
 APs.
 
 ### 3.4. AP Structure
@@ -174,11 +173,10 @@ APs.
 AP:      [AP number]
 Title:   [title]
 Repo:    [agathis-project]
-State:   [Idea | Draft | Released | Rejected]
+State:   [Idea | Draft | Release | Rejected]
 Type:    [Informational | Process]
 License: [license]
-Author:  [gihub username]
-Issues:  [where the issues are tracked, url]
+Author:  [github username]
 ```  
 
 - **1. Abstract**
@@ -198,33 +196,42 @@ Issues:  [where the issues are tracked, url]
   - CC-BY-SA is the preferred license for *Process* and *Informational* APs.
   
 - **6. Attachments**
-  - list the attachments; include visual prints for non-text files.
+  - list the attachments; include prints for non-text files.
   - note the application software used for each non-text source.
 
 ### 3.5. Changing AP Author
 
-- the author is not a title, but a reponsibility.
+- the author is a reponsibility, not a title; fulfilling the author's role 
+  requires, beside the creativity for the initial idea, time and effort to 
+  complete the AP and maintain it through its lifecycle.
 
-- the author may change; always seek agreement.
+- the author responsibility is measured through the way the issues are 
+  addressed.
+
+- the author should seek replacement when needed:
+  - the author open an issue titled AP-?-Title-Author Replacement.
+  - the admin makes a community announcement.
+  - anyone interested in taking the author responsibility  should comment on 
+    the issue.
+  - the admin decides about the new author and assign the rights to the repo.  
   
-- APs are declared orphaned if its issues are not commented by author within 
-  30 days and a specific issue is created.
-
-- the admin makes an anouncement about the orphaned AP and the search for a new 
-  author.
-
-- anyone interested in taking the author responsibility  should comment on the 
-  issue.
-
-- the admin decides about the new author and assign the rights to the repo.
+- APs are declared orphaned if open issues are not commented by author within 
+  30 days:
+  - the admin open an issue titled AP-?-Title-Author Replacement in the AP's 
+    repo and makes a community announcement.
+  - anyone interested in taking the author responsibility  should comment on 
+    the issue.
+  - the admin decides about the new author and assign the rights to the repo.
 
 - the author change is effective when the author in the AP preamble is updated 
   by the admin.
 
 ## 4. References
 
-- github pull request workflow
-- AP Review
+- [AP-8 AP Review] https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md
+- [Github Flow] http://scottchacon.com/2011/08/31/github-flow.html
+- [Pro Git book] https://git-scm.com/book/en/v2
+- [Github Help] https://help.github.com/
 
 ## 5. License
 
@@ -235,7 +242,6 @@ Issues:  [where the issues are tracked, url]
 
 - AP-1-1
   - AP-1-1.odg (source)
-  - AP-1-1.png (presentation, image)
   - AP-1-1p1.png (presentation, image)
   - AP-1-1p2.png (presentation, image)
   - AP-1-1p3.png (presentation, image)  
