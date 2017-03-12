@@ -17,6 +17,13 @@ implementation - the firmware. The hardware interfaces and main uC
 functionality are described in *AP-1 Root Module HW*.
 
 ## 2. Rationale
+
+Without the uC, the root module is dead in the water. At a the bare minimum,
+to support the microprocessor (uP) bring-up, the uC needs to turn on the power
+converters and take the uP out of reset.
+
+The documenation of the uC firmware is a must; this AP will support just that.
+
 ## 3. Content
 ## 4. References
 ## 5. License
