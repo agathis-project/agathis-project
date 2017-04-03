@@ -19,6 +19,11 @@ Agathis Proposals and specifically how to drive the Process and Information APs
 from idea to release.
 
 ## 2. Rationale
+
+AP Guideline helps to:
+  1. improve communication through documentation consistency. 
+  2. improve productivity through repeatable workflows.
+
 ## 3. Content
 ## 4. References
 ## 5. License
