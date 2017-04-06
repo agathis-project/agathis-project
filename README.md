@@ -29,7 +29,7 @@ AP# |Repo Name                                                                  
 1   |[salix-arctica](https://github.com/agathis-project/salix-arctica)                              |  Root Module HW                 | tbd    | TAPR
 2   |[salix-bakko](https://github.com/agathis-project/salix-bakko)                                  |  Root Extension Test Card HW    | tbd    | TAPR
 3   |[fagus-crenata](https://github.com/agathis-project/fagus-crenata)                              |  Power Module HW                | tbd    | TAPR
-4   |[agathis-project](https://github.com/agathis-project/agathis-breweri)                          |  Root Module Microcontroller FW | draft  | GPL
+4   |[salix-breweri](https://github.com/agathis-project/salix-breweri)                              |  Root Module Microcontroller FW | draft  | GPL
 5   |[cocos-nucifera](https://github.com/agathis-project/cocos-nucifera)                            |  Embedded Stacked Enclosure HW  | tbd    | TAPR
 6   |[robinia-pseudoacacia](https://github.com/agathis-project/robinia-pseudoacacia)                |  Remote Test Station HW/SW      | tbd    | tbd
 7   |[pinus-rigida](https://github.com/agathis-project/pinus-rigida)                                |  Agathis Trunk Standard         | draft  | CC-BY-SA
