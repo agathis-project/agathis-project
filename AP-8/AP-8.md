@@ -216,7 +216,22 @@ Author:  [github username]
   - list the attachments; include prints for non-text files.
   - note the application software used for each non-text source.
 
-### 3.5. Changing AP Author
+### 3.5. AP Formatting Rules
+
+Th AP documents use [markdown](https://en.wikipedia.org/wiki/Markdown) for formatting.
+The following rules are recommended:
+
+- use spaces **NOT tabs**, Please make sure your text editor is configured te replace tabs with spaces.
+There is no rule for how many spaces per tab, just try to be consistent
+
+- there should be an **empty line** after a header
+
+- if you write a list and you don't know if it should be ordered or unordered
+error on the side of ordered lists.
+
+- 80 characters per line (this is not absolute, i.e. it is allowed to finish the word)
+
+### 3.6. Changing AP Author
 
 - the author is a responsibility, not a title; fulfilling the author's role
   requires, beside the creativity for the initial idea, time and effort to
