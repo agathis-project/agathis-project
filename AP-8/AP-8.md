@@ -22,8 +22,8 @@ from idea to release.
 
 AP Guideline helps to:
 
-  1. improve communication through documentation consistency.
-  2. improve productivity through repeatable workflows.
+- improve communication through documentation consistency.
+- improve productivity through repeatable workflows.
 
 ## 3. Content
 
@@ -31,13 +31,10 @@ AP Guideline helps to:
 
 A number of four types of Agathis Proposals are identified:
 
-- **HW (Hardware Development) AP** documents a hardware feature.
-
-- **SW (Software Development) AP** documents a software feature.
-
-- **Process AP** documents how to do things around here with increased efficiency.
-
-- **Informational AP** documents useful information.
+1. **HW (Hardware Development) AP** documents a hardware feature.
+2. **SW (Software Development) AP** documents a software feature.
+3. **Process AP** documents how to do things around here with increased efficiency.
+4. **Informational AP** documents useful information.
 
 ### 3.2. AP and Repository
 
@@ -79,40 +76,40 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
 **Someone (called author herein) got an idea:** to engage the
 Agathis Project, the author should get a AP number.
 
-  1. go to agathis-project repo and **open an new issue** labelled **New idea**.
-  2. **title** it with intended AP title.
-  3. fill in the comments area with the **abstract of the idea**.
-  4. append **@admin** tag at the end of the abstract.
-  5. **submit** the issue.
+1. go to agathis-project repo and **open an new issue** labelled **New idea**.
+2. **title** it with intended AP title.
+3. fill in the comments area with the **abstract of the idea**.
+4. append **@admin** tag at the end of the abstract.
+5. **submit** the issue.
 
 **This issue will trigger the admin response:**
 
-  1. check AP title and summary for sanity; if the idea is insane skip to
-     step 5.
-  2. create a new AP folder with an AP document template; fill in preamble
-     and abstract; the AP number should be taken as the next available in the
-     AP Index.
-  3. list the new AP at *idea* state in the AP Index.
-  4. create a branch named *AP-?-Title-Idea*.
-  5. comment the issue and close it.
+1. check AP title and summary for sanity; if the idea is insane skip to
+   step 5.
+2. create a new AP folder with an AP document template; fill in preamble
+   and abstract; the AP number should be taken as the next available in the
+   AP Index.
+3. list the new AP at *idea* state in the AP Index.
+4. create a branch named *AP-?-Title-Idea*.
+5. comment the issue and close it.
 
 **The author prepares the idea for review:**
 
-  - work on branch *AP-? Title*
-  - not too much, not too little: just enough for the team to get the idea
-    and comment - before too much work may get to waste or block team
-    contributions.
-    - commit as needed.
+1. work on branch *AP-? Title*
+2. not too much, not too little: just enough for the team to get the idea
+   and comment - before too much work may get to waste or block team
+   contributions.
+3. commit as needed.
 
 **Idea Pull Request**
 
-  - the author starts a pull request when ready.
-  - discuss and fix issues, comments.
-  - commit as needed.
+1. the author starts a pull request when ready.
+2. discuss and fix issues, comments.
+3. commit as needed.
 
 **Idea Review**
 
-  - follow process described in AP-9 Review.
+- follow process described in AP-9 Review.
 
 #### 3.3.2. Draft State
 
@@ -120,23 +117,23 @@ Agathis Project, the author should get a AP number.
 
 **Entering the Draft State:** if review vote is passed.
 
-  1. the admin merge the AP as voted with the preamble state updated to Draft.
-  2. the admin updates the state to "Draft" in AP-0 AP Index.
+1. the admin merge the AP as voted with the preamble state updated to Draft.
+2. the admin updates the state to "Draft" in AP-0 AP Index.
 
 **Work on the draft:**
 
-  - the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
-  - commit as needed.
+1. the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
+2. commit as needed.
 
 **Draft Pull Request**
 
-  - the author starts a pull request when ready.
-  - discuss and fix issues, comments.
-  - commit as needed.
+1. the author starts a pull request when ready.
+2. discuss and fix issues, comments.
+3. commit as needed.
 
 **Draft Review**
 
-  - when ready, enter draft review: follow AP-9 Review.
+- when ready, enter draft review: follow AP-9 Review.
 
 #### 3.3.3. Released State
 
@@ -144,21 +141,21 @@ Agathis Project, the author should get a AP number.
 
 **Entering the Released State:** if the review vote is passed
 
-  1. the admin merge the AP branch with the preamble state updated to Released.
-  2. the admin updates the AP state to "Release" in AP Index.
+1. the admin merge the AP branch with the preamble state updated to Released.
+2. the admin updates the AP state to "Release" in AP Index.
 
 **Work on the release:**
 
-  1. issues accumulating.
-  2. the author creates a branch *AP-?-Title-Release*.
-  3. every commit in the release state should refer to an issue; in other words,
-     no commits without issues.
+1. issues accumulating.
+2. the author creates a branch *AP-?-Title-Release*.
+3. every commit in the release state should refer to an issue; in other words,
+   no commits without issues.
 
 **Release Pull Request**
 
-  1. the author starts a pull request when ready.
-  2. discuss comments and fix issues.
-  3. commit as needed.
+1. the author starts a pull request when ready.
+2. discuss comments and fix issues.
+3. commit as needed.
 
 **Release Review**
 
