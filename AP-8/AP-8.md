@@ -78,41 +78,36 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
 
 1. **Someone (called author herein) got an idea:** to engage the
    Agathis Project, the author should get an AP number.
-
-  1. go to agathis-project repo and **open an new issue** labelled **New idea**.
-  2. **title** it with intended AP title.
-  3. fill in the comments area with the **abstract of the idea**.
-  4. append **@admin** tag at the end of the abstract.
-  5. **submit** the issue.
+    1. go to agathis-project repo and **open an new issue** labelled **New idea**.
+    2. **title** it with intended AP title.
+    3. fill in the comments area with the **abstract of the idea**.
+    4. append **@admin** tag at the end of the abstract.
+    5. **submit** the issue.
 
 2. **This issue will trigger the admin response:**
-
-  1. check AP title and summary for sanity; if the idea is insane skip to
-     step 5.
-  2. create a new AP folder with an AP document template; fill in preamble
-     and abstract; the AP number should be taken as the next available in the
-     AP Index.
-  3. list the new AP at *idea* state in the AP Index.
-  4. create a branch named *AP-?-Title-Idea*.
-  5. comment the issue and close it.
+    1. check AP title and summary for sanity; if the idea is insane skip to
+       step 5.
+    2. create a new AP folder with an AP document template; fill in preamble
+       and abstract; the AP number should be taken as the next available in the
+       AP Index.
+    3. list the new AP at *idea* state in the AP Index.
+    4. create a branch named *AP-?-Title-Idea*.
+    5. comment the issue and close it.
 
 3. **The author prepares the idea for review:**
-
-  1. work on branch *AP-? Title*
-  2. not too much, not too little: just enough for the team to get the idea
-    and comment - before too much work may get to waste or block team
-    contributions.
-  3. commit as needed.
+    1. work on branch *AP-? Title*
+    2. not too much, not too little: just enough for the team to get the idea
+      and comment - before too much work may get to waste or block team
+      contributions.
+    3. commit as needed.
 
 4. **Idea Pull Request**
-
-  1. the author starts a pull request when ready.
-  2. discuss and fix issues, comments.
-  3. commit as needed.
+    1. the author starts a pull request when ready.
+    2. discuss and fix issues, comments.
+    3. commit as needed.
 
 5. **Idea Review**
-
-  - follow process described in AP-9 Review.
+    - follow process described in AP-9 Review.
 
 #### 3.3.2. Draft State
 
@@ -219,19 +214,19 @@ Author:  [github username]
    addressed.
 
 3. the author should seek replacement when needed:
-  1. the author open an issue titled AP-?-Title-Author Replacement.
-  2. the admin makes a community announcement.
-  3. anyone interested in taking the author responsibility  should comment on
-     the issue.
-  4. the admin decides about the new author and assign the rights to the repo.
+    1. the author open an issue titled AP-?-Title-Author Replacement.
+    2. the admin makes a community announcement.
+    3. anyone interested in taking the author responsibility  should comment on
+       the issue.
+    4. the admin decides about the new author and assign the rights to the repo.
 
 4. APs are declared orphaned if open issues are not commented by author within
   30 days:
-  1. the admin open an issue titled AP-?-Title-Author Replacement in the AP's
-     repo and makes a community announcement.
-  2. anyone interested in taking the author responsibility  should comment on
-     the issue.
-  3. the admin decides about the new author and assign the rights to the repo.
+    1. the admin open an issue titled AP-?-Title-Author Replacement in the AP's
+       repo and makes a community announcement.
+    2. anyone interested in taking the author responsibility  should comment on
+       the issue.
+    3. the admin decides about the new author and assign the rights to the repo.
 
 5. the author change is effective when the author in the AP preamble is updated
    by the admin.
@@ -249,10 +244,10 @@ Author:  [github username]
 
 ## 4. References
 
-- [AP-8 AP Review] https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md
-- [Github Flow] http://scottchacon.com/2011/08/31/github-flow.html
-- [Pro Git book] https://git-scm.com/book/en/v2
-- [Github Help] https://help.github.com/
+1. [AP-8 AP Review] https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md
+2. [Github Flow] http://scottchacon.com/2011/08/31/github-flow.html
+3. [Pro Git book] https://git-scm.com/book/en/v2
+4. [Github Help] https://help.github.com/
 
 ## 5. License
 
@@ -262,10 +257,10 @@ Author:  [github username]
 ## 6. Attachments
 
 - AP-1-1
-  - AP-1-1.odg (source)
-  - AP-1-1p1.png (presentation, image)
-  - AP-1-1p2.png (presentation, image)
-  - AP-1-1p3.png (presentation, image)
-  - AP-1-1p4.png (presentation, image)
-  - content: flowchart diagrams
-  - editor: LibreOffice Draw 3.3.3
+  1. AP-1-1.odg (source)
+  2. AP-1-1p1.png (presentation, image)
+  3. AP-1-1p2.png (presentation, image)
+  4. AP-1-1p3.png (presentation, image)
+  5. AP-1-1p4.png (presentation, image)
+    - content: flowchart diagrams
+    - editor: LibreOffice Draw 3.3.3
