@@ -77,7 +77,7 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
 ![AP Workflow](AP-8-1p2.png)
 
 **Someone (called author herein) got an idea:** to engage the
-Agathis Project, the author should get a AP number.
+Agathis Project, the author should get an AP number.
 
   1. go to agathis-project repo and **open an new issue** labelled **New idea**.
   2. **title** it with intended AP title.
@@ -190,6 +190,16 @@ Type:    [Informational | Process]
 License: [license]
 Author:  [github username]
 ```
+
+### 3.5. Editing recommendations:
+
+- **Numbered versus bulet list:**
+  - use bulet list is the items are less than and numbered list otherwise.
+
+- **Limit the number of caracters per row to 80**; this is a soft recommendation.
+
+- **Avoid tabs at any cost**
+
 
 - **1. Abstract**
 
