@@ -47,10 +47,10 @@ A number of four types of Agathis Proposals are identified:
 
 2. **Development APs**  are born as ideas in agathis-project repo then moved and
   grown under their own repo:
-  - while hosted in agathis-project repo, they are located in their respective
-  AP folder, where *AP-?.md* is the main text file, markdown formated.
-  - after they pass the idea review, development APs are moved in their own
-  repo with *AP-?.md* file becoming *readme.md* in the repo's root.
+    - while hosted in agathis-project repo, they are located in their respective
+    AP folder, where *AP-?.md* is the main text file, markdown formated.
+    - after they pass the idea review, development APs are moved in their own
+    repo with *AP-?.md* file becoming *readme.md* in the repo's root.
 
 3. the **master** (default) branch can be modified only through merging pull
   requests; actual work shall be done on a non-master branch.
@@ -79,22 +79,22 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
 **Someone (called author herein) got an idea:** to engage the
 Agathis Project, the author should get an AP number.
 
-  1. go to agathis-project repo and **open an new issue** labelled **New idea**.
-  2. **title** it with intended AP title.
-  3. fill in the comments area with the **abstract of the idea**.
-  4. append **@admin** tag at the end of the abstract.
-  5. **submit** the issue.
+1. go to agathis-project repo and **open an new issue** labelled **New idea**.
+2. **title** it with intended AP title.
+3. fill in the comments area with the **abstract of the idea**.
+4. append **@admin** tag at the end of the abstract.
+5. **submit** the issue.
 
 **This issue will trigger the admin response:**
 
-  1. check AP title and summary for sanity; if the idea is insane skip to
+1. check AP title and summary for sanity; if the idea is insane skip to
      step 5.
-  2. create a new AP folder with an AP document template; fill in preamble
+2. create a new AP folder with an AP document template; fill in preamble
      and abstract; the AP number should be taken as the next available in the
      AP Index.
-  3. list the new AP at *idea* state in the AP Index.
-  4. create a branch named *AP-?-Title-Idea*.
-  5. comment the issue and close it.
+3. list the new AP at *idea* state in the AP Index.
+4. create a branch named *AP-?-Title-Idea*.
+5. comment the issue and close it.
 
 **The author prepares the idea for review:**
 
@@ -102,7 +102,7 @@ Agathis Project, the author should get an AP number.
   - not too much, not too little: just enough for the team to get the idea
     and comment - before too much work may get to waste or block team
     contributions.
-    - commit as needed.
+  - commit as needed.
 
 **Idea Pull Request**
 
@@ -118,23 +118,23 @@ Agathis Project, the author should get an AP number.
 
 ![AP Workflow](AP-8-1p3.png)
 
-**Entering the Draft State:** if review vote is passed.
+1. **Entering the Draft State:** if review vote is passed.
 
-  1. the admin merge the AP as voted with the preamble state updated to Draft.
-  2. the admin updates the state to "Draft" in AP-0 AP Index.
+    - the admin merge the AP as voted with the preamble state updated to Draft.
+    - the admin updates the state to "Draft" in AP-0 AP Index.
 
-**Work on the draft:**
+2. **Work on the draft:**
 
-  - the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
-  - commit as needed.
+    - the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
+    - commit as needed.
 
-**Draft Pull Request**
+3. **Draft Pull Request**
 
   - the author starts a pull request when ready.
   - discuss and fix issues, comments.
   - commit as needed.
 
-**Draft Review**
+4. **Draft Review**
 
   - when ready, enter draft review: follow AP-9 Review.
 
@@ -142,25 +142,25 @@ Agathis Project, the author should get an AP number.
 
 ![AP Workflow](AP-8-1p4.png)
 
-**Entering the Released State:** if the review vote is passed
+1. **Entering the Released State:** if the review vote is passed
 
   1. the admin merge the AP branch with the preamble state updated to Released.
   2. the admin updates the AP state to "Release" in AP Index.
 
-**Work on the release:**
+2. **Work on the release:**
 
   1. issues accumulating.
   2. the author creates a branch *AP-?-Title-Release*.
   3. every commit in the release state should refer to an issue; in other words,
      no commits without issues.
 
-**Release Pull Request**
+3. **Release Pull Request**
 
   1. the author starts a pull request when ready.
   2. discuss comments and fix issues.
   3. commit as needed.
 
-**Release Review**
+4. **Release Review**
 
 - when ready, enter draft review: follow AP-9 Review.
 
