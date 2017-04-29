@@ -106,8 +106,7 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
     2. discuss and fix issues, comments.
     3. commit as needed.
 
-5. **Idea Review**
-    - follow process described in AP-9 Review.
+5. **Idea Vote** -- see **Vote** chapter at the end of the this doc.
 
 #### 3.3.2. Draft State
 
@@ -126,8 +125,7 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
     - discuss and fix issues, comments.
     - commit as needed.
 
-4. **Draft Review**
-    - when ready, enter draft review: follow AP-9 Review.
+4. **Draft Vote** -- see **Vote** chapter at the end of the this doc.
 
 #### 3.3.3. Released State
 
@@ -149,8 +147,7 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
     - discuss comments and fix issues.
     - commit as needed.
 
-5. **Release Review**
-  - when ready, enter draft review: follow AP-9 Review.
+4. **Release Vote** -- see **Vote** chapter at the end of the this doc.
 
 Note1: for Informational and Process AP, at any time, there is only one valid
 release: the master (default branch) - is the latest and the greatest.
@@ -173,7 +170,7 @@ changes).
 AP:      [AP number]
 Title:   [title]
 Repo:    [agathis-project]
-State:   [Idea | Draft | Release | Rejected]
+State:   [Idea | Draft | Release]
 Type:    [Informational | Process]
 License: [license]
 Author:  [github username]
@@ -240,14 +237,31 @@ Author:  [github username]
 2. **Limit the number of caracters per row to 80**; this is a soft recommendation.
 
 3. **Avoid tabs at any cost**
-  
+
+### 3.6. Voting
+
+1. After all was said and done during a state change pull request, the author 
+  ask the project community to vote the pull request by opening an issue titled
+  "Pull Request Vote".
+
+2. The author proposes the voters list in the comment area (use @voter_name 
+  tag); the admin ammends this list as needed.
+
+3. The voters comment the issue with +1 (approve) or -1 (reject) within 5 days 
+  limit.
+
+4. after voting is closed, the admin:
+    - counts the votes; if the counting is undecided, the admin has the last 
+	word. 
+	- comments the *Pull Request Vote* declaring the result as *approved* or 
+	*rejected*.
+	- completes the merge with if the pull request was approved.
 
 ## 4. References
 
-1. [AP-8 AP Review] https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md
-2. [Github Flow] http://scottchacon.com/2011/08/31/github-flow.html
-3. [Pro Git book] https://git-scm.com/book/en/v2
-4. [Github Help] https://help.github.com/
+1. [Github Flow] http://scottchacon.com/2011/08/31/github-flow.html
+2. [Pro Git book] https://git-scm.com/book/en/v2
+3. [Github Help] https://help.github.com/
 
 ## 5. License
 
