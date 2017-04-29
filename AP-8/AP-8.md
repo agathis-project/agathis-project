@@ -31,33 +31,33 @@ AP Guideline helps to:
 
 A number of four types of Agathis Proposals are identified:
 
-- **HW (Hardware Development) AP** documents a hardware feature.
+1. **HW (Hardware Development) AP** documents a hardware feature.
 
-- **SW (Software Development) AP** documents a software feature.
+2. **SW (Software Development) AP** documents a software feature.
 
-- **Process AP** documents how to do things around here with increased efficiency.
+3. **Process AP** documents how to do things around here with increased efficiency.
 
-- **Informational AP** documents useful information.
+4. **Informational AP** documents useful information.
 
 ### 3.2. AP and Repository
 
-- **Informational and Process APs** are always located in agathis-project repo,
+1. **Informational and Process APs** are always located in agathis-project repo,
   under their respective AP folder; *AP-?.md* is the main text file,
   markdown formated.
 
-- **Development APs**  are born as ideas in agathis-project repo then moved and
+2. **Development APs**  are born as ideas in agathis-project repo then moved and
   grown under their own repo:
   - while hosted in agathis-project repo, they are located in their respective
   AP folder, where *AP-?.md* is the main text file, markdown formated.
   - after they pass the idea review, development APs are moved in their own
   repo with *AP-?.md* file becoming *readme.md* in the repo's root.
 
-- the **master** (default) branch can be modified only through merging pull
+3. the **master** (default) branch can be modified only through merging pull
   requests; actual work shall be done on a non-master branch.
 
-- all merges in agathis-project repo are done by admins only.
+4. all merges in agathis-project repo are done by admins only.
 
-- the merges in development repos are done by their respective authors with
+5. the merges in development repos are done by their respective authors with
   admin rights.
 
 ### 3.3. Informational and Process AP Workflow
@@ -191,16 +191,6 @@ License: [license]
 Author:  [github username]
 ```
 
-### 3.5. Editing recommendations:
-
-- **Numbered versus bulet list:**
-  - use bulet list is the items are less than and numbered list otherwise.
-
-- **Limit the number of caracters per row to 80**; this is a soft recommendation.
-
-- **Avoid tabs at any cost**
-
-
 - **1. Abstract**
 
   - keep it short;
@@ -252,6 +242,17 @@ Author:  [github username]
 
 - the author change is effective when the author in the AP preamble is updated
   by the admin.
+
+  
+### 3.5. Editing recommendations:
+
+- **Numbered versus bulet list:**
+  - use bulet list is the items are less than and numbered list otherwise.
+
+- **Limit the number of caracters per row to 80**; this is a soft recommendation.
+
+- **Avoid tabs at any cost**
+  
 
 ## 4. References
 
