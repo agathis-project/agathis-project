@@ -271,10 +271,11 @@ Author:  [github username]
 ## 6. Attachments
 
 - AP-1-1
-  1. AP-1-1.odg (source)
-  2. AP-1-1p1.png (presentation, image)
-  3. AP-1-1p2.png (presentation, image)
-  4. AP-1-1p3.png (presentation, image)
-  5. AP-1-1p4.png (presentation, image)
-    - content: flowchart diagrams
-    - editor: LibreOffice Draw 3.3.3
+  - files:
+    1. AP-1-1.odg (source)
+    2. AP-1-1p1.png (presentation, image)
+    3. AP-1-1p2.png (presentation, image)
+    4. AP-1-1p3.png (presentation, image)
+    5. AP-1-1p4.png (presentation, image)
+  - content: flowchart diagrams
+  - editor: LibreOffice Draw 3.3.3
