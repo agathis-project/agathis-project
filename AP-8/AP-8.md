@@ -76,41 +76,41 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
 
 ![AP Workflow](AP-8-1p2.png)
 
-**Someone (called author herein) got an idea:** to engage the
-Agathis Project, the author should get an AP number.
+1. **Someone (called author herein) got an idea:** to engage the
+   Agathis Project, the author should get an AP number.
 
-1. go to agathis-project repo and **open an new issue** labelled **New idea**.
-2. **title** it with intended AP title.
-3. fill in the comments area with the **abstract of the idea**.
-4. append **@admin** tag at the end of the abstract.
-5. **submit** the issue.
+  1. go to agathis-project repo and **open an new issue** labelled **New idea**.
+  2. **title** it with intended AP title.
+  3. fill in the comments area with the **abstract of the idea**.
+  4. append **@admin** tag at the end of the abstract.
+  5. **submit** the issue.
 
-**This issue will trigger the admin response:**
+2. **This issue will trigger the admin response:**
 
-1. check AP title and summary for sanity; if the idea is insane skip to
+  1. check AP title and summary for sanity; if the idea is insane skip to
      step 5.
-2. create a new AP folder with an AP document template; fill in preamble
+  2. create a new AP folder with an AP document template; fill in preamble
      and abstract; the AP number should be taken as the next available in the
      AP Index.
-3. list the new AP at *idea* state in the AP Index.
-4. create a branch named *AP-?-Title-Idea*.
-5. comment the issue and close it.
+  3. list the new AP at *idea* state in the AP Index.
+  4. create a branch named *AP-?-Title-Idea*.
+  5. comment the issue and close it.
 
-**The author prepares the idea for review:**
+3. **The author prepares the idea for review:**
 
-  - work on branch *AP-? Title*
-  - not too much, not too little: just enough for the team to get the idea
+  1. work on branch *AP-? Title*
+  2. not too much, not too little: just enough for the team to get the idea
     and comment - before too much work may get to waste or block team
     contributions.
-  - commit as needed.
+  3. commit as needed.
 
-**Idea Pull Request**
+4. **Idea Pull Request**
 
-  - the author starts a pull request when ready.
-  - discuss and fix issues, comments.
-  - commit as needed.
+  1. the author starts a pull request when ready.
+  2. discuss and fix issues, comments.
+  3. commit as needed.
 
-**Idea Review**
+5. **Idea Review**
 
   - follow process described in AP-9 Review.
 
@@ -119,50 +119,43 @@ Agathis Project, the author should get an AP number.
 ![AP Workflow](AP-8-1p3.png)
 
 1. **Entering the Draft State:** if review vote is passed.
-
     - the admin merge the AP as voted with the preamble state updated to Draft.
     - the admin updates the state to "Draft" in AP-0 AP Index.
 
 2. **Work on the draft:**
-
     - the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
     - commit as needed.
 
 3. **Draft Pull Request**
-
-  - the author starts a pull request when ready.
-  - discuss and fix issues, comments.
-  - commit as needed.
+    - the author starts a pull request when ready.
+    - discuss and fix issues, comments.
+    - commit as needed.
 
 4. **Draft Review**
-
-  - when ready, enter draft review: follow AP-9 Review.
+    - when ready, enter draft review: follow AP-9 Review.
 
 #### 3.3.3. Released State
 
 ![AP Workflow](AP-8-1p4.png)
 
 1. **Entering the Released State:** if the review vote is passed
-
-  1. the admin merge the AP branch with the preamble state updated to Released.
-  2. the admin updates the AP state to "Release" in AP Index.
+    - the admin merge the AP branch with the preamble state updated to Released.
+    - the admin updates the AP state to "Release" in AP Index.
 
 2. **Work on the release:**
+    - issues accumulating.
+    - the author creates a branch *AP-?-Title-Release*.
+	
+3. every commit in the release state should refer to an issue; in other words,
+    - no commits without issues.
 
-  1. issues accumulating.
-  2. the author creates a branch *AP-?-Title-Release*.
-  3. every commit in the release state should refer to an issue; in other words,
-     no commits without issues.
+4. **Release Pull Request**
+    - the author starts a pull request when ready.
+    - discuss comments and fix issues.
+    - commit as needed.
 
-3. **Release Pull Request**
-
-  1. the author starts a pull request when ready.
-  2. discuss comments and fix issues.
-  3. commit as needed.
-
-4. **Release Review**
-
-- when ready, enter draft review: follow AP-9 Review.
+5. **Release Review**
+  - when ready, enter draft review: follow AP-9 Review.
 
 Note1: for Informational and Process AP, at any time, there is only one valid
 release: the master (default branch) - is the latest and the greatest.
@@ -218,40 +211,40 @@ Author:  [github username]
 
 ### 3.5. Changing AP Author
 
-- the author is a responsibility, not a title; fulfilling the author's role
-  requires, beside the creativity for the initial idea, time and effort to
-  complete the AP and maintain it through its lifecycle.
+1. the author is a responsibility, not a title; fulfilling the author's role
+   requires, beside the creativity for the initial idea, time and effort to
+   complete the AP and maintain it through its lifecycle.
 
-- the author responsibility is measured through the way the issues are
-  addressed.
+2. the author responsibility is measured through the way the issues are
+   addressed.
 
-- the author should seek replacement when needed:
-  - the author open an issue titled AP-?-Title-Author Replacement.
-  - the admin makes a community announcement.
-  - anyone interested in taking the author responsibility  should comment on
-    the issue.
-  - the admin decides about the new author and assign the rights to the repo.
+3. the author should seek replacement when needed:
+  1. the author open an issue titled AP-?-Title-Author Replacement.
+  2. the admin makes a community announcement.
+  3. anyone interested in taking the author responsibility  should comment on
+     the issue.
+  4. the admin decides about the new author and assign the rights to the repo.
 
-- APs are declared orphaned if open issues are not commented by author within
+4. APs are declared orphaned if open issues are not commented by author within
   30 days:
-  - the admin open an issue titled AP-?-Title-Author Replacement in the AP's
-    repo and makes a community announcement.
-  - anyone interested in taking the author responsibility  should comment on
-    the issue.
-  - the admin decides about the new author and assign the rights to the repo.
+  1. the admin open an issue titled AP-?-Title-Author Replacement in the AP's
+     repo and makes a community announcement.
+  2. anyone interested in taking the author responsibility  should comment on
+     the issue.
+  3. the admin decides about the new author and assign the rights to the repo.
 
-- the author change is effective when the author in the AP preamble is updated
-  by the admin.
+5. the author change is effective when the author in the AP preamble is updated
+   by the admin.
 
   
 ### 3.5. Editing recommendations:
 
-- **Numbered versus bulet list:**
-  - use bulet list is the items are less than and numbered list otherwise.
+1. **Numbered versus bulet list:** use bulet list is the items are less than 3
+  and numbered list otherwise.
 
-- **Limit the number of caracters per row to 80**; this is a soft recommendation.
+2. **Limit the number of caracters per row to 80**; this is a soft recommendation.
 
-- **Avoid tabs at any cost**
+3. **Avoid tabs at any cost**
   
 
 ## 4. References
