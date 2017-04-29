@@ -139,8 +139,8 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
     - issues accumulating.
     - the author creates a branch *AP-?-Title-Release*.
 	
-3. every commit in the release state should refer to an issue; in other words,
-    - no commits without issues.
+3. **every commit** in the release state should refer to an issue; in other words,
+no commits without issues.
 
 4. **Release Pull Request**
     - the author starts a pull request when ready.
@@ -229,7 +229,7 @@ Author:  [github username]
    by the admin.
 
   
-### 3.5. Editing recommendations:
+### 3.6. Editing recommendations:
 
 1. **Numbered versus bulet list:** use bulet list is the items are less than 3
   and numbered list otherwise.
@@ -238,7 +238,7 @@ Author:  [github username]
 
 3. **Avoid tabs at any cost**
 
-### 3.6. Voting
+### 3.7. Voting
 
 1. After all was said and done during a state change pull request, the author 
   ask the project community to vote the pull request by opening an issue titled
@@ -250,12 +250,12 @@ Author:  [github username]
 3. The voters comment the issue with +1 (approve) or -1 (reject) within 5 days 
   limit.
 
-4. after voting is closed, the admin:
+4. After voting is closed, the admin does the followings:
     - counts the votes; if the counting is undecided, the admin has the last 
 	word. 
-	- comments the *Pull Request Vote* declaring the result as *approved* or 
-	*rejected*.
-	- completes the merge with if the pull request was approved.
+	- comments the *Pull Request Vote* issue declaring the result as *approved*
+	or *rejected*.
+	- merges the pull request if approved.
 
 ## 4. References
 
