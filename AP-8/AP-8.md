@@ -22,8 +22,8 @@ from idea to release.
 
 AP Guideline helps to:
 
-  1. improve communication through documentation consistency.
-  2. improve productivity through repeatable workflows.
+- improve communication through documentation consistency.
+- improve productivity through repeatable workflows.
 
 ## 3. Content
 
@@ -32,11 +32,8 @@ AP Guideline helps to:
 A number of four types of Agathis Proposals are identified:
 
 1. **HW (Hardware Development) AP** documents a hardware feature.
-
 2. **SW (Software Development) AP** documents a software feature.
-
 3. **Process AP** documents how to do things around here with increased efficiency.
-
 4. **Informational AP** documents useful information.
 
 ### 3.2. AP and Repository
@@ -120,6 +117,7 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
     - the author creates a branch named *AP-?-Title-Draft* and edit the AP on this branch.
     - commit as needed.
 
+
 3. **Draft Pull Request**
     - the author starts a pull request when ready.
     - discuss and fix issues, comments.
@@ -135,6 +133,7 @@ Process and Informational APs have three main states: **Idea, Draft and Release*
     - the admin merge the AP branch with the preamble state updated to Released.
     - the admin updates the AP state to "Release" in AP Index.
 
+
 2. **Work on the release:**
     - issues accumulating.
     - the author creates a branch *AP-?-Title-Release*.
@@ -147,7 +146,7 @@ no commits without issues.
     - discuss comments and fix issues.
     - commit as needed.
 
-4. **Release Vote** -- see **Vote** chapter at the end of the this doc.
+5. **Release Vote** -- see **Vote** chapter at the end of the this doc.
 
 Note1: for Informational and Process AP, at any time, there is only one valid
 release: the master (default branch) - is the latest and the greatest.
@@ -201,7 +200,22 @@ Author:  [github username]
   - list the attachments; include prints for non-text files.
   - note the application software used for each non-text source.
 
-### 3.5. Changing AP Author
+### 3.5. AP Formatting Rules
+
+Th AP documents use [markdown](https://en.wikipedia.org/wiki/Markdown) for formatting.
+The following rules are recommended:
+
+- use spaces **NOT tabs**, Please make sure your text editor is configured te replace tabs with spaces.
+There is no rule for how many spaces per tab, just try to be consistent
+
+- there should be an **empty line** after a header
+
+- if you write a list and you don't know if it should be ordered or unordered
+error on the side of ordered lists.
+
+- 80 characters per line (this is not absolute, i.e. it is allowed to finish the word)
+
+### 3.6. Changing AP Author
 
 1. the author is a responsibility, not a title; fulfilling the author's role
    requires, beside the creativity for the initial idea, time and effort to
