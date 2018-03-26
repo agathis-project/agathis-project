@@ -14,7 +14,7 @@
 AP# | Repo Name         |   Title                         | State | License
 :--:|:------------------|:--------------------------------|:------|:--------
 8   |[agathis-project](https://github.com/agathis-project/agathis-project/blob/master/AP-8/AP-8.md)  | AP Guideline                    | draft | CC-BY-SA
-9   |[agathis-project](https://github.com/agathis-project/agathis-project/blob/master/AP-9/AP-9.md)  | AP Review                       | draft | CC-BY-SA
+
 
 ### Informational
 
