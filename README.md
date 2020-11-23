@@ -33,6 +33,8 @@ AP# |Repo Name                                                                  
 6   |[robinia-pseudoacacia](https://github.com/agathis-project/robinia-pseudoacacia)                |  Remote Test Station            | on hold  | CC-BY-SA
 7   |[pinus-rigida](https://github.com/agathis-project/pinus-rigida)                                |  Agathis HW Specification       | draft  | CC-BY-SA
 9   |[pinus-flexilis](https://github.com/agathis-project/pinus-flexilis)                            |  Agathis SW Specification       | draft  | CC-BY-SA
+10  |[pinus-strobus](https://github.com/agathis-project/pinus-strobus)                              |  Agathis Management Controller - Software Implementation | draft  | GPL3
+11  |[carica-papaya](https://github.com/agathis-project/carica-papaya)                              |  Eval Card for Management Controller | draft | TAPR
 
 ### License
 
